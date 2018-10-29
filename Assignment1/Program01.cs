@@ -12,11 +12,11 @@ namespace Assignment1
 
             string reversedInput = "";
 
-            // Loop through input string
-            for (int i = 0; i < userInput.Length; i++)
+            // Loop through input string in reverse
+            for (int i = userInput.Length - 1; i >= 0; i--)
             {
-                // Add characters of the input string to the reversedInput string, starting from the end
-                reversedInput += userInput[userInput.Length - (i + 1)];
+                // Add characters of the input string to the reversedInput string
+                reversedInput += userInput[i];
             }
 
             // Output result
